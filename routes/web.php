@@ -15,4 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/admin', function () {
+    return view('template/admin/master');
+});
+
+Route::get('/admin/statistic', function () {
+    return view('template/admin/partials/statistic');
+});
+
 Route::resource('products','ProductController');
